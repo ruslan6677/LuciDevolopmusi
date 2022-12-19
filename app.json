@@ -1,0 +1,69 @@
+{
+    "name": "@MusicAzBot",
+    "description": "Azərbaycan dilində Musiqi botu.",
+    "logo": "https://telegra.ph/file/37232da6ee1464e42a586.jpg",
+    "keywords": [
+        "Music",
+        "Az",
+        "Bot"
+    ],
+    "repository": "https://github.com/",
+    "success_url": "https://github.com/",
+    "image": "heroku/python",
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    },
+    "env": {
+        "API_ID": {
+            "description": "my.telegram.org saytından ala bilərsiniz.",
+            "value": "",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "my.telegram.org saytından ala bilərsiniz.",
+            "value": "",
+            "required": true
+        },
+        "BOT_TOKEN": {
+            "description": "@Botfather botundan ala bilərsiniz.",
+            "value": "",
+            "required": true
+        },
+        "PLAYLIST_NAME": {
+            "description": "Playlist kanalının kullanıcı adını @ bu işarə olmadan yazın.",
+            "value": "",
+            "required": true
+        },
+        "PLAYLIST_ID": {
+            "description": "Playlist kanalının ID-ni yazın.",
+            "value": "",
+            "required": true
+        },
+        "BOT_OWNER": {
+            "description": "Öz kullanıcı adınızı @ bu işarə olmadan yazın.",
+            "value": "",
+            "required": true
+        },
+        "BOT_USERNAME": {
+            "description": "Botun kullanıcı adını @ bu işarə olmadan yazın.",
+            "value": "",
+            "required": true
+        },
+        "CHANNEL": {
+            "description": "Kanal Tag Adı @ olmadan yerləşdirin.",
+            "value": "",
+            "required": true            
+        }
+    },
+    "buildpacks": [
+        {
+            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+        },
+        {
+            "url": "heroku/python"
+        }
+    ]
+}
